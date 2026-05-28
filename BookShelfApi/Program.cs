@@ -1,4 +1,4 @@
-
+using BookShelfApi.Services;
 namespace BookShelfApi
 {
     public class Program
@@ -10,8 +10,8 @@ namespace BookShelfApi
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+            builder.Services.AddSingleton<BookService>();
 
             var app = builder.Build();
 
