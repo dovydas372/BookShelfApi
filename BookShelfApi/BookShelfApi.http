@@ -3,4 +3,12 @@
 GET {{BookShelfApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
+@BookShelfApi_HostAddress = https://localhost:7250
+
+
+
+###
+
+GET {{BookShelfApi_HostAddress}}/api/books/1
+
 ###
